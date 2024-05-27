@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <link rel="shortcut icon" href="images/favicon.png" type="" />
+  <title>Funded</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <div class="bg_img_box">
+        <img src="images/hero-bg.png" alt="" />
+      </div>
+    </div>
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span> Funded </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="/Homepage/index.html">Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/About Us/aboutus.html"> About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Services/service.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Budget Tracker/budgetTracker.html">BT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Homepage/team.html">Team</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/News/news.html">News<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="http://localhost:3000/">
+                  <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <form class="d-flex" role="search">
+        <input id="searchInput" placeholder="Search..." name="q" type="search">
+        <button  id="search" type="submit">Search</button>
+      </form>
+      
+      <h1 style="color: white;">(<span id="resultCount"></span> Results) </h1>
+      <div class="row content">
+      </div>
+      <div class="d-flex justify-content-around my-4">
+        <button class="btn btn-primary" id="prev"> &lt; Previous Page</button>
+        <button class="btn btn-primary" id="next">Next Page &gt;</button>
+      </div>
+    </div>
+    <section class="info_section layout_padding2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3 info_col">
+            <div class="info_contact">
+              <h4>Address</h4>
+              <div class="contact_link_box">
+                <a href="">
+                  <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  <span> Mumbai </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-phone" aria-hidden="true"></i>
+                  <span> Call +91 9012873467 </span>
+                </a>
+                <a href="">
+                  <i class="fa fa-envelope" aria-hidden="true"></i>
+                  <span> funded@gmail.com </span>
+                </a>
+              </div>
+            </div>
+            <div class="info_social">
+              <a href="">
+                <i class="fa fa-facebook" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 info_col">
+            <div class="info_detail">
+              <h4>Info</h4>
+              <p>
+                Funded is a finance website that brings fun to
+                funding through news updates, budget tools, and transaction tracking.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-2 mx-auto info_col">
+            <div class="info_link_box">
+              <h4>Links</h4>
+              <div class="info_links">
+                <a class="active" href="index.html"> Home </a>
+                <a class="" href="about.html"> About </a>
+                <a class="" href="service.html"> Services </a>
+                <a class="" href="why.html"> Why Us </a>
+                <a class="" href="team.html"> Team </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 info_col">
+            <h4>Subscribe</h4>
+            <form action="#">
+              <input type="text" placeholder="Enter email" />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- end info section -->
+    <!-- jQery -->
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <!-- popper js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <!-- owl slider -->
+    <script type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- custom js -->
+    <script type="text/javascript" src="js/custom.js"></script>
+    <!-- Google Map -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
+    <!-- End Google Map -->
+    <script>
+      let currentQuery ="finance";
+      let currentPage = 1;
+
+        // const fetchNews = async (page, q) => {
+        //   console.log(` Fetching news for ${q}, Page number ${page}...`)
+        //   var url = 'https://newsapi.org/v2/everything?' +
+        //     'q=' +q+
+        //     '&from=2024-03-27&' +
+        //     'pageSize=20&' +
+        //     'page=2&' +
+        //     'language=en&' +
+        //     'sortBy=popularity&' +
+        //     'apiKey=6bd5e70b3f3a48e8a50b8d49b571f9b3';
+
+        //   var req = new Request(url);
+
+        //   let a = await fetch(req)
+        //   let response = await a.json()
+
+
+
+
+
+    const fetchNews = async (page, q) => {
+    console.log(`Fetching news for ${q}, Page number ${page}...`);
+    const url = `https://newsapi.org/v2/everything?q=${q}&from=2024-05-25&pageSize=20&page=${page}&language=en&sortBy=popularity&apiKey=bfa01900fd764ab6a2e3405c317af492`;
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const articles = data.articles;
+        let newsHTML = "";
+        for (const item of articles) {
+            let imageUrl = item.urlToImage ? item.urlToImage : 'https://via.placeholder.com/150';
+            newsHTML += `
+                <div class="card my-3 mx-auto" style="width: 18rem;">
+                    <img height=190 src="${imageUrl}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">${item.title.slice(0,23)}</h5>
+                        <p class="card-text">${item.description.slice(0,100)}...</p>
+                        <a href="${item.url}" target="_blank" class="btn btn-primary">Read Article</a>
+                    </div>
+                </div>`;
+        }
+        document.querySelector(".content").innerHTML = newsHTML;
+        document.getElementById("resultCount").innerText = data.totalResults;
+    } catch (error) {
+        console.error('Error fetching news:', error);
+    }
+};
+
+
+fetchNews(currentPage, currentQuery);
+
+
+
+
+          // let response = {"status":"ok","totalResults":949,"articles":[{"source":{"id":null,"name":"Forbes"},"author":"Angela Chan, Contributor, \n Angela Chan, Contributor\n https://www.forbes.com/sites/angelachan/","title":"From Finance To Tech Titan: The Inspiring Journey Of Anda Pho, Evite’s New President","description":"In an exclusive interview, Anda shared insights on her career, the transformative vision for Evite, and the power of diverse leadership in the tech industry.","url":"https://www.forbes.com/sites/angelachan/2024/03/27/from-finance-to-tech-titan-the-inspiring-journey-of-anda-pho-evites-new-president/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66040c41a5f57081ca4a7781/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T16:00:50Z","content":"Anda Pho, President of Evite\r\nEvite\r\nThe journey of Anda Pho, the newly appointed President of Evite, is a masterclass in leadership, resilience, and visionary strategy. Her path from a finance profe… [+4454 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Hunter Madeley, Forbes Councils Member, \n Hunter Madeley, Forbes Councils Member\n https://www.forbes.com/sites/forbestechcouncil/people/huntermadeley/","title":"4 Ways AI Can Empower Modern FP&A Teams","description":"Finance teams aren’t wrong to tread carefully when it comes to AI. With the right human oversight, though, there are plenty of ways AI promises to empower FP&A teams.","url":"https://www.forbes.com/sites/forbestechcouncil/2024/03/27/4-ways-ai-can-empower-modern-fpa-teams/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/64df73f1b88c2afbd20c8df3/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T10:00:00Z","content":"Hunter Madeley, CEO Vena.\r\ngetty\r\nTraditionally risk-averse, finance teams continue to be slow in joining the AI train. When my organization Vena surveyed 175 finance professionals in 2021, only 7% w… [+5586 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Sebastian Widmann, Contributor, \n Sebastian Widmann, Contributor\n https://www.forbes.com/sites/sebastianwidmann/","title":"ETFs May Be Exciting, But Custodians Hold The Keys To Bitcoin","description":"For issuers of digital asset ETFs, institutional-grade custody ensuring the highest level of security sits at the core of their offering.","url":"https://www.forbes.com/sites/digital-assets/2024/03/27/etfs-may-be-exciting-but-custodians-hold-the-keys-to-bitcoin/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66029db5313593a756562bdd/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T07:20:38Z","content":"An illustration of the Bitcoin spot ETF is launching in Suqian, Jiangsu Province, China, on January ... [+] 11, 2024. (Photo by Costfoto/NurPhoto via Getty Images)\r\nNurPhoto via Getty Images\r\nThe SEC… [+3917 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Yessar Rosendar, Forbes Staff, \n Yessar Rosendar, Forbes Staff\n https://www.forbes.com/sites/yessarrosendar/","title":"Billionaire Salim-Backed Firm To Build $2.5 Billion Tourism Estate North Of Jakarta","description":"A company backed by billionaire Anthoni Salim and entrepreneur Sugianto Kusuma plans to build a $2.5 billion tourism estate in coastal town north of Jakarta.","url":"https://www.forbes.com/sites/yessarrosendar/2024/03/27/billionaire-salim-backed-firm-to-build-25-billion-tourism-estate-north-of-jakarta/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66025f365eda28d27040ad6e/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T07:53:24Z","content":"Anthoni Salim, president director and chief executive officer of PT Indofood CBP Sukses Makmur, ... [+] speaks during a joint news conference with Naoki Izumiya, president and representative director… [+1968 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Everett Potter, Contributor, \n Everett Potter, Contributor\n https://www.forbes.com/sites/everettpotter/","title":"WeatherPromise: A Weather Guarantee For Your Next Trip","description":"Book a trip with WeatherPromise and you'll get a refund if it rains a certain number of days during your vacation.","url":"https://www.forbes.com/sites/everettpotter/2024/03/27/weatherpromise-a-weather-guarantee-for-your-next-trip/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66040f69872294ac917e905b/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T12:25:57Z","content":"WeatherPromise is designed to protect your trip in the event of bad weather, such as on this rainy ... [+] day in Paris.\r\ngetty\r\nThe business concept of a new travel company called WeatherPromise is … [+4453 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Josipa Majic Predin, Contributor, \n Josipa Majic Predin, Contributor\n https://www.forbes.com/sites/josipamajic/","title":"Rethinking ESG: A Path Towards Objectivity And Impact","description":"The EU is not immune to this sentiment, although the bloc has been able to enact numerous regulations aimed at improving transparency and standardisation in the privat...","url":"https://www.forbes.com/sites/josipamajic/2024/03/27/rethinking-esg-a-path-towards-objectivity-and-impact/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6604317c271d08eea93f16d2/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T14:53:36Z","content":"NEW YORK, NEW YORK - SEPTEMBER 13: Traders work on the floor of the New York Stock Exchange during ... [+] afternoon trading on September 13, 2022 in New York City. U.S. stocks opened lower today and… [+10577 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Tilak Doshi, Contributor, \n Tilak Doshi, Contributor\n https://www.forbes.com/sites/tilakdoshi/","title":"ESG By Any Other Name Would Smell Just As Bad","description":"The fight between pro and anti-ESG forces is unlikely to be over soon and may even just be beginning. But there is hope that rationality might prevail.","url":"https://www.forbes.com/sites/tilakdoshi/2024/03/27/esg-by-any-other-name-would-smell-just-as-bad/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6603fcb1ee151686481a56ad/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T11:09:36Z","content":"NEW YORK, NY - NOVEMBER 09: Larry Fink speaks onstage at The New York Times 2017 DealBook ... [+] Conference at Jazz at Lincoln Center on November 9, 2017 in New York City. (Photo by Michael Cohen/Ge… [+8795 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Seth Bogner, Forbes Councils Member, \n Seth Bogner, Forbes Councils Member\n https://www.forbes.com/sites/forbesbusinesscouncil/people/sethbogner/","title":"Healing The Divide: Advancing Access To Pediatric Care","description":"Investing in community health initiatives empowers healthcare companies and entrepreneurs to make a tangible difference.","url":"https://www.forbes.com/sites/forbesbusinesscouncil/2024/03/27/healing-the-divide-advancing-access-to-pediatric-care/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6602d991d01e8fa8896df7d5/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T13:30:00Z","content":"Seth Bogner, Chairman &amp; CEO of Heartpoint Global, has more than three decades of experience in principal investing and structured finance.\r\ngetty\r\nThe disparities in healthcare access between a c… [+7155 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Julia Rafal-Baer, Forbes Councils Member, \n Julia Rafal-Baer, Forbes Councils Member\n https://www.forbes.com/sites/forbesbusinesscouncil/people/juliarafalbaer/","title":"Why Every Woman CEO Needs A Poker Strategy","description":"The lessons from poker can help women excel at work.","url":"https://www.forbes.com/sites/forbesbusinesscouncil/2024/03/27/why-every-woman-ceo-needs-a-poker-strategy/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6602d8863da2061e32bf15b7/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T13:00:00Z","content":"CEO and Founder, Women Leading Ed and ILO Group.\r\ngetty\r\nThe cards shuffled, the chips clicked, and a faint scent of stale beer hung in the air. Sunglasses and tilted hats obscured the faces of the m… [+6499 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Peter Cohan, Senior Contributor, \n Peter Cohan, Senior Contributor\n https://www.forbes.com/sites/petercohan/","title":"Why Adam Neumann’s Reported $500 Million WeWork Bid Could Easily Fail","description":"The company aims, instead, to emerge from bankruptcy by the end of June 2024 as a \"financially strong and profitable company,\" a company spokesman told the Journal.","url":"https://www.forbes.com/sites/petercohan/2024/03/27/why-adam-neumanns-500-million-wework-bid-could-easily-fail/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66032695fc9c2aadabc7bedf/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T16:03:47Z","content":"AUSTIN, TEXAS - JANUARY 19: Israeli-American businessman Adam Neumann speaks during The Israeli ... [+] American Council (IAC) 8th Annual National Summit on January 19, 2023 in Austin, Texas. (Photo … [+9286 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Adrian Bridgwater, Senior Contributor, \n Adrian Bridgwater, Senior Contributor\n https://www.forbes.com/sites/adrianbridgwater/","title":"Why People Are The Core Of An AI Team","description":"An AI team needs to be made up of the right mix of people spanning data scientists, business logic gurus, programmers, administrators & commercial business specialists.","url":"https://www.forbes.com/sites/adrianbridgwater/2024/03/27/why-people-are-the-core-of-an-ai-team/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6602901ae82e25490a994f13/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T12:00:43Z","content":"COLOGNE, GERMANY - AUGUST 16: People put their hands on the Cross of the World Youth Day as it ... [+] arrives in Cologne on August 16, 2005 in Cologne, Germany. Thousands of young Catholics are arri… [+10185 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Danielle Chemtob, Forbes Staff, \n Danielle Chemtob, Forbes Staff\n https://www.forbes.com/sites/daniellechemtob/","title":"Forbes Daily: Trump Media Soars On Debut, But Is It A Meme Stock?","description":"Wednesday's edition of Forbes Daily covers the impact of the Baltimore bridge collapse,   a landmark credit card settlement, crypto's billion dollar zombies, and more.","url":"https://www.forbes.com/sites/daniellechemtob/2024/03/27/forbes-daily-trump-media-soars-on-debut-but-is-it-a-meme-stock/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/6604117e5e328e76286c9ac2/0x0.jpg?format=jpg&crop=3058,1722,x0,y157,safe&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T12:33:20Z","content":"This is a published version of the Forbes Daily newsletter, you can sign-up to get Forbes Daily in your inbox here.\r\nGood morning,\r\nThose chocolate eggs and rabbits might come with a higher price tag… [+10414 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Teresa Ghilarducci, Senior Contributor, \n Teresa Ghilarducci, Senior Contributor\n https://www.forbes.com/sites/teresaghilarducci/","title":"Why Bernie Sanders Is Right About America’s Retirement Crisis","description":"Nearly half (44%) of all American households with members aged 55-64 have no savings at all and will have to rely entirely on Social Security.","url":"https://www.forbes.com/sites/teresaghilarducci/2024/03/27/why-bernie-sanders-is-right-about-americas-retirement-crisis/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66020a7955ee97b88a541ed1/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T12:00:02Z","content":"WASHINGTON, DC - OCTOBER 18: Chairman of the Senate Health, Education, Labor and Pensions Committee ... [+] Sen. Bernie Sanders (I-VT) questions Monica Bertagnolli during her confirmation hearing to … [+8499 chars]"},{"source":{"id":null,"name":"Forbes"},"author":"Angelica Mari, Senior Contributor, \n Angelica Mari, Senior Contributor\n https://www.forbes.com/sites/angelicamarideoliveira/","title":"Rio Grande Do Sul: Brazil's Gateway To South American Tech Ecosystems","description":"Businesses, the government and academia want to develop the local tech industry to position the state as one of Brazil's main tech hubs.","url":"https://www.forbes.com/sites/angelicamarideoliveira/2024/03/27/rio-grande-do-sul-brazils-gateway-to-south-american-tech-ecosystems/","urlToImage":"https://imageio.forbes.com/specials-images/imageserve/66043671f4b20dfd0dab2a08/0x0.jpg?format=jpg&height=900&width=1600&fit=bounds","publishedAt":"2024-03-27T15:14:15Z","content":"The view of the inland port located on the shores of Guaíba Lake in Porto Alegre, where South Summit ... [+] takes place\r\ngetty\r\nIn the southernmost tip of Brazil, the state of Rio Grande do Sul is i… [+11762 chars]"},{"source":{"id":null,"name":"autosport.com"},"author":"Matt Kew","title":"Wolff: Correlation issues, not dogmatism behind Mercedes F1 struggles","description":"The Mercedes 2022 challenger was plagued by porpoising and bouncing while its W14 successor drew complaints from drivers Lewis Hamilton and George Russell over rear-end handling instability.That prompted Mercedes to change concept for 2024, fully abandoning a…","url":"https://www.autosport.com/f1/news/wolff-correlation-issues-not-dogmatism-behind-merc-f1-struggles/10592110/","urlToImage":"https://cdn-6.motorsport.com/images/amp/63vn4wDY/s6/george-russell-mercedes-f1-w15.jpg","publishedAt":"2024-03-27T08:40:02Z","content":"The Mercedes 2022 challenger was plagued by porpoising and bouncing while its W14 successor drew complaints from drivers Lewis Hamilton and George Russell over rear-end handling instability.\r\nThat pr… [+2543 chars]"},{"source":{"id":null,"name":"Biztoc.com"},"author":"news.bitcoin.com","title":"Socialfi Expands Satoshi Nakamoto’s Vision of a Defi System to Social Media, Says Kevin Lu","description":"According to Kevin Lu, social finance, or “socialfi” — a combination of social media and decentralized finance — is an innovation that extends Satoshi Nakamoto’s vision of a decentralized financial system to social media. Although it’s not intended to replace…","url":"https://biztoc.com/x/9b4b5d7568fb99ba","urlToImage":"https://c.biztoc.com/p/9b4b5d7568fb99ba/s.webp","publishedAt":"2024-03-27T10:14:14Z","content":"According to Kevin Lu, social finance, or socialfi a combination of social media and decentralized finance is an innovation that extends Satoshi Nakamotos vision of a decentralized financial system t… [+236 chars]"},{"source":{"id":null,"name":"Abnormalreturns.com"},"author":"abnormalreturns","title":"Personal finance links: a completely personal decision","description":"Wednesdays are all about personal finance here at Abnormal Returns. You can check out last week’s links including a look at how...","url":"https://abnormalreturns.com/2024/03/27/personal-finance-links-a-completely-personal-decision/","urlToImage":null,"publishedAt":"2024-03-27T13:57:38Z","content":"This content, which contains security-related opinions and/or information, is provided for informational purposes only and should not be relied upon in any manner as professional advice, or an endors… [+1570 chars]"},{"source":{"id":null,"name":"BetaNews"},"author":"Sofia Elizabella Wyciślik-Wilson","title":"Microsoft uses KB5035941 update to bring new features to Windows 10","description":"Windows 10 may be in the later stages of its life, but Microsoft has still not given up on it. With just 18 months of support left, the company has released the KB5035941 update which adds Windows Spotlight to your desktop background as well as new lockscreen…","url":"https://betanews.com/2024/03/27/microsoft-uses-kb5035941-update-to-bring-new-features-to-windows-10/","urlToImage":"https://betanews.com/wp-content/uploads/2024/03/Embossed-Windows-10-logo-50x50.webp","publishedAt":"2024-03-27T10:05:19Z","content":"Windows 10 may be in the later stages of its life, but Microsoft has still not given up on it. With just 18 months of support left, the company has released the KB5035941 update which adds Windows Sp… [+5380 chars]"},{"source":{"id":null,"name":"CoinDesk"},"author":"Krisztian Sandor","title":"Ether.Fi's ETHFI Jumps 50% to Record, May Boost Valuations for Liquid Restaking Token Airdrops: Analyst","description":"Restaking has become one of the hottest sectors in DeFi, with new protocols leveraging Ethereum's proof-of-stake blockchain to secure other networks.","url":"https://www.coindesk.com/markets/2024/03/27/etherfis-ethfi-jumps-50-to-record-may-boost-valuations-for-liquid-restaking-token-airdrops-analyst/","urlToImage":"https://www.coindesk.com/resizer/wDIOWAKgrU39PvPXM3Sk1iW53ps=/1200x628/center/middle/cloudfront-us-east-1.images.arcpublishing.com/coindesk/Q5DUW3UFYJHDNI4CEQDEGNNSUU.jpg","publishedAt":"2024-03-27T16:31:30Z","content":"<ul><li>ETHFI hit a record high $7.2 Wednesday, withstanding the declines in ether and the broad-market CoinDesk 20 Index.\r\n</li><li>The performance could bolster valuations for other liquid restakin… [+2029 chars]"},{"source":{"id":null,"name":"CoinDesk"},"author":"Ian Allison","title":"Hopes for Another DeFi Summer Soar as TradFi Markets Suddenly Look Less Appealing","description":"Since the approval of spot bitcoin ETFs in January, DeFi looks ascendant, triggering memories of 2020, aka DeFi Summer, when the space bustled with activity.","url":"https://www.coindesk.com/business/2024/03/27/hopes-for-another-defi-summer-soar-as-tradfi-markets-suddenly-look-less-appealing/","urlToImage":"https://www.coindesk.com/resizer/l3hAZ8Z9nLSn1xw7oWBa1cvEAzE=/1200x628/center/middle/cloudfront-us-east-1.images.arcpublishing.com/coindesk/GJF5FLDZ6FFKXPXDOXEIM7VZEE.jpg","publishedAt":"2024-03-27T13:43:26Z","content":"<ul><li>DeFi yields have exceeded yields from conventional investments like U.S. Treasuries, raising hopes for rekindled interest and maybe another DeFi Summer.\r\n</li><li>MakerDAO's DAI Savings Rate … [+4986 chars]"}]} 
+
+
+
+//           let str =""
+//           resultCount.innerHTML = response.totalResults 
+//           for (item of response.articles) {
+//     str += `<div class="card my-3 mx-auto" style="width: 18rem;">
+//                 <img src="${item.urlToImage}" class="card-img-top" alt="...">
+//                 <div class="card-body">
+//                     <h5 class="card-title">${item.title}</h5>
+//                     <p class="card-text">${item.description}</p>
+//                     <a href="${item.url}" target="_blank" class="btn btn-primary">Go somewhere</a>
+//                 </div>
+//             </div>`;
+// }
+//           document.querySelector(".content").innerHTML = str
+//         };
+
+//            fetchNews(1, currentQuery );
+
+
+
+          // search.addEventListener("click" , (e)=>{
+          //   e.preventDefault()
+          //   let query = searchInput.value;
+          //   currentQuery = query;
+          //   fetchNews(1, query );
+          // })
+
+          // prev.addEventListener("click" , (e)=>{
+          //   e.preventDefault()
+          //   if(currentPage > 1)
+          //   {
+          //     currentPage = currentPage - 1;
+          //     fetchNews(currentPage, currentQuery );
+          //   }
+          // })
+
+          // next.addEventListener("click" , (e)=>{
+          //   e.preventDefault()
+          //   currentPage = currentPage + 1;
+          //   fetchNews(currentPage, currentQuery );
+          // })
+
+
+
+
+    search.addEventListener("click", (e) => {
+    e.preventDefault();
+    let query = searchInput.value;
+    currentQuery = query;
+    fetchNews(1, query);
+});
+
+prev.addEventListener("click", (e) => {
+    e.preventDefault();
+    if (currentPage > 1) {
+        currentPage--;
+        fetchNews(currentPage, currentQuery);
+    }
+});
+
+next.addEventListener("click", (e) => {
+    e.preventDefault();
+    currentPage++;
+    fetchNews(currentPage, currentQuery);
+});
+    </script>
+</body>
+
+</html>

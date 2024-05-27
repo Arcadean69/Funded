@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="images/favicon.png" type="" />
+    <title>About Us</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <title>Budget Tracker</title>
+    <link rel="stylesheet" href="/Budget Tracker/css/style2.css">
+    <link rel="stylesheet" href="/Budget Tracker/css/style.css">
+</head>
+<body>
+    <div class="hero_area">
+        <div class="hero_bg_box">
+          <div class="bg_img_box">
+            <img src="images/hero-bg.png" alt="" />
+          </div>
+        </div>
+        
+        <header class="header_section">
+          <div class="container-fluid">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
+              <a class="navbar-brand" href="/Homepage/index.html">
+                <span> Funded </span>
+              </a>
+    
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class=""> </span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Homepage/index.html">Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/About Us/aboutus.html"> About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Tradingview/trade.html">TradeView</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="/Budget Tracker/budgetTracker.html"> BT<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/Homepage/team.html">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/News/news.html">News</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:3000/">
+                      <i class="fa fa-user" aria-hidden="true"></i> Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+          
+        </header>
+    <div class="headerBar">
+        <div>
+            <h1 class="title">My Budget Tracker</h1>
+            <h2 class="topbar">Your Current Balance</h2>
+            <p>
+                <span class="currency">$</span>
+                <span class="balance"></span>
+            </p>
+        </div>
+    </div>
+    <div class="content">
+        <h3 class="secondTitle">Add a new transaction: </h3>
+        <div class="form">
+            <form id="expForm">
+                <div class="formLine left">
+                    <span for="type">Type:</span>
+                    <select id="type">
+                        <option value="chooseOne">Choose one...</option>
+                        <option value="income">Income</option>
+                        <option value="expense">Expense</option>
+                    </select>
+                </div>
+                <div class="formLine right">
+                    <span for="name">Name:</span>
+                    <input type="text" id="name">
+                </div>
+
+                <div class="formLine right">
+                    <span for="amount">Amount:</span>
+                    <input type="text" id="amount">
+                </div>
+                <button type="submit" class="buttonSave">Add to transactions</button>
+            </form>
+        </div>
+    </div>
+    <div class="tabler">
+    <div class="content">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Amount</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody id="transactionTable"></tbody>
+        </table>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
